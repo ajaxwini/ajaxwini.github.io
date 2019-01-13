@@ -9,9 +9,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
    	<meta name="viewport" content="width=device-width, initial-scale=1">
    	<title>My First Website</title>
    </head>
+   
    <body>
+   	
    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MRJWSFZ"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+   
+   <script type="text/javascript">
+		dataLayer = [{
+      		'productSku': 'pbz00123',
+      		'productName': 'The Original Rider Waite Tarot cards',
+      		'productPrice': '9.99'
+    	}];
+	</script>
+
 	This is my very first website and I'm <b>extremely excited!!!!!!</b>
+	
+	<a href="#"
+   name="color"
+   onclick="dataLayer.push({
+     'color': 'red',
+     'conversionValue': 50,
+     'event': 'customizeCar'});">Customize Color</a>
+	 
+	 dataLayer.push({'pageTitle': 'Home'});   
+	 
+	 dataLayer.push(
+	'event': 'playVideo',
+	'videoId': 'vid-000-123',
+	'videoName': 'Skateboarding dog',
+	'videoAuthor': 'user-00121'
+	'videoFormat': 'hd'
+);
    </body>
 </html>
